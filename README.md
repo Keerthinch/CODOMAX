@@ -8,4 +8,3 @@
 - Created GitHub Account
 - Initialized Git Repository
 
-This repository contains my Day 1 internship tasks.
