@@ -1,25 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Day 2 HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 </head>
 <body>
 
-    <section>
+    <!-- Header -->
+    <header>
         <h1>Hi, I'm Keerthi</h1>
-        <p>Welcome to my portfolio website.</p>
-    </section>
+        <p>Aspiring Web Developer</p>
+    </header>
 
-    <section>
-        <h2>Frontend Developer</h2>
-        <p>I am learning HTML, CSS and JavaScript.</p>
-        <button>Contact Me</button>
-    </section>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#education">Education</a> |
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am a B.Tech student learning Web Development through my internship.</p>
-    </section>
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to my portfolio website.</p>
+        </section>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <h2>Frontend Developer</h2>
+            <p>I am learning HTML, CSS and JavaScript through my internship.</p>
+            <button>Contact Me</button>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Keerthi.
+                I am a B.Tech student learning Web Development through my internship.
+                I am learning HTML, Git and GitHub to become a Frontend Developer.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Course</th>
+                    <th>College</th>
+                    <th>Year</th>
+                </tr>
+
+                <tr>
+                    <td>B.Tech</td>
+                    <td>Aditya College of Engineering and Technology</td>
+                    <td>2024-2028</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" rows="5" cols="30" placeholder="Write your message"></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Keerthi. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
