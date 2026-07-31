@@ -20,27 +20,33 @@ header {
 /* Navigation */
 
 nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     background-color: #333;
-    text-align: center;
     padding: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 15px;
     font-weight: bold;
 }
 
 nav a:hover {
     color: yellow;
 }
+/* Main (CSS Grid) */
 
+main{
+    display:grid;
+    gap:20px;
+    padding:20px;
+}
 /* Sections */
 
 section {
     background-color: white;
-    margin: 20px;
     padding: 20px;
     border-radius: 8px;
 }
@@ -65,7 +71,31 @@ button {
 button:hover {
     background-color: #45a049;
 }
+/* Hero (Flexbox) */
 
+#hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/* Skills (Flexbox) */
+
+.skills-list{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    padding:0;
+}
+
+.skills-list li{
+    background:#4CAF50;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+}
 /* Table */
 
 table {
@@ -83,6 +113,10 @@ th,
 td {
     padding: 10px;
     text-align: center;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
 }
 
 /* Form */
