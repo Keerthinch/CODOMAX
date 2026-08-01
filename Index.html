@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -16,10 +17,10 @@
 
     <!-- Navigation -->
     <nav>
-        <a href="#home">Home</a> |
-        <a href="#about">About</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#education">Education</a> |
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -33,36 +34,40 @@
 
         <!-- Hero Section -->
         <section id="hero">
-            <h2>Frontend Developer</h2>
-            <p>I am learning HTML, CSS and JavaScript through my internship.</p>
-            <button>Contact Me</button>
+            <div>
+                <h2>Frontend Developer</h2>
+                <p>I am learning HTML, CSS and JavaScript through my internship.</p>
+                <a href="#contact">
+                    <button>Contact Me</button>
+                </a>
+            </div>
         </section>
 
         <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Hello! My name is Keerthi.
-                I am a B.Tech student learning Web Development through my internship.
-                I am learning HTML, Git and GitHub to become a Frontend Developer.
+                Hello! My name is Keerthi. I am a B.Tech student learning Web Development through my internship.
+                I am learning HTML, CSS, Git and GitHub to become a Frontend Developer.
             </p>
         </section>
 
         <!-- Skills Section -->
-       <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-        <li>HTML</li>
-        <li>Git</li>
-        <li>GitHub</li>
-    </ul>
-</section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
 
         <!-- Education Section -->
         <section id="education">
             <h2>Education</h2>
 
-            <table border="1">
+            <table>
                 <tr>
                     <th>Course</th>
                     <th>College</th>
@@ -70,9 +75,9 @@
                 </tr>
 
                 <tr>
-                    <td>B.Tech</td>
+                    <td>B.Tech (CSE - Data Science)</td>
                     <td>Aditya College of Engineering and Technology</td>
-                    <td>2024-2028</td>
+                    <td>2024 - 2028</td>
                 </tr>
             </table>
         </section>
@@ -82,14 +87,14 @@
             <h2>Contact Me</h2>
 
             <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" placeholder="keerti n.ch"><br><br>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" placeholder="keerthisrinch@gmail.com"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email" required><br><br>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" rows="5" cols="30" placeholder="contact me by these details"></textarea><br><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea><br><br>
 
                 <button type="submit">Send</button>
             </form>
@@ -99,7 +104,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Keerthi. All Rights Reserved.</p>
+        <p>&copy; 2026 Keerthi | All Rights Reserved.</p>
     </footer>
 
 </body>

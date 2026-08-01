@@ -36,13 +36,16 @@ nav a {
 nav a:hover {
     color: yellow;
 }
+
 /* Main (CSS Grid) */
 
-main{
-    display:grid;
-    gap:20px;
-    padding:20px;
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
+
 /* Sections */
 
 section {
@@ -71,31 +74,33 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
 /* Hero (Flexbox) */
 
-#hero{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Skills (Flexbox) */
 
-.skills-list{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    list-style:none;
-    padding:0;
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
-.skills-list li{
-    background:#4CAF50;
-    color:white;
-    padding:10px 20px;
-    border-radius:5px;
+.skills-list li {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
+
 /* Table */
 
 table {
@@ -114,6 +119,7 @@ td {
     padding: 10px;
     text-align: center;
 }
+
 th {
     background-color: #4CAF50;
     color: white;
@@ -137,4 +143,84 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* =======================================
+   Day 6 - Responsive Design (Media Queries)
+======================================= */
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .skills-list {
+        flex-direction: row;
+    }
+
+    #hero {
+        flex-direction: row;
+    }
 }
