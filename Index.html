@@ -11,7 +11,7 @@
 
     <!-- Header -->
     <header>
-        <h1>Hi, I'm Keerthi</h1>
+        <h1 id="heading">Hi, I'm Keerthi</h1>
         <p>Aspiring Web Developer</p>
     </header>
 
@@ -30,6 +30,12 @@
         <section id="home">
             <h2>Welcome</h2>
             <p>Welcome to my portfolio website.</p>
+
+            <!-- JavaScript Button -->
+            <button id="welcomeBtn">Click Me</button>
+
+            <!-- Message -->
+            <p id="welcomeMessage"></p>
         </section>
 
         <!-- Hero Section -->
@@ -37,6 +43,7 @@
             <div>
                 <h2>Frontend Developer</h2>
                 <p>I am learning HTML, CSS and JavaScript through my internship.</p>
+
                 <a href="#contact">
                     <button>Contact Me</button>
                 </a>
@@ -48,16 +55,18 @@
             <h2>About Me</h2>
             <p>
                 Hello! My name is Keerthi. I am a B.Tech student learning Web Development through my internship.
-                I am learning HTML, CSS, Git and GitHub to become a Frontend Developer.
+                I am learning HTML, CSS, Git, GitHub and JavaScript to become a Frontend Developer.
             </p>
         </section>
 
         <!-- Skills Section -->
         <section id="skills">
             <h2>Skills</h2>
+
             <ul class="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
+                <li>JavaScript</li>
                 <li>Git</li>
                 <li>GitHub</li>
             </ul>
@@ -88,13 +97,13 @@
 
             <form>
                 <label for="name">Name</label><br>
-                <input type="text" id="name" placeholder="Enter your name" required><br><br>
+                <input type="text" id="name" placeholder="N. Ch. Keerthi Srihita" required><br><br>
 
                 <label for="email">Email</label><br>
-                <input type="email" id="email" placeholder="Enter your email" required><br><br>
+                <input type="email" id="email" placeholder="keerthisrinch@gmail.com" required><br><br>
 
                 <label for="message">Message</label><br>
-                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea><br><br>
+                <textarea id="message" rows="5" placeholder="Please contact me using these details." required></textarea><br><br>
 
                 <button type="submit">Send</button>
             </form>
@@ -106,6 +115,12 @@
     <footer>
         <p>&copy; 2026 Keerthi | All Rights Reserved.</p>
     </footer>
+
+    <!-- Scroll To Top Button -->
+    <button id="topBtn">⬆ Top</button>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
 
 </body>
 </html>
