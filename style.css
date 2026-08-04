@@ -296,3 +296,45 @@ footer {
         flex-direction: row;
     }
 }
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill-card{
+    background:#4CAF50;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.experience-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    margin:20px auto;
+    max-width:700px;
+}
+
+#resume{
+    text-align:center;
+}
+
+#resume .btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+#resume .btn:hover{
+    background:#388E3C;
+}
