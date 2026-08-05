@@ -32,10 +32,29 @@ topBtn.addEventListener("click", function () {
     });
 });
 
-// Contact Form Submit Event
-const form = document.querySelector("form");
+// Contact Form Validation
+const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent page refresh
-    alert("Thank you! Your message has been submitted successfully.");
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+    alert("Please fill in all fields.");
+    return;
+}
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+}
+
+alert("Thank you! Your message has been submitted successfully.");
+
+form.reset();
 });
