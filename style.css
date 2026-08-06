@@ -1,12 +1,15 @@
 /* General Styling */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -32,10 +35,12 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
     color: yellow;
+    transform: scale(1.1);
 }
 
 /* Main (CSS Grid) */
@@ -75,8 +80,8 @@ button {
 
 button:hover {
     background-color: #45a049;
+    transform: translateY(-3px);
 }
-
 /* Hero (Flexbox) */
 
 #hero {
@@ -124,13 +129,13 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
+    transition: all 0.4s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
-
 .project-card h3 {
     color: #4CAF50;
 }
@@ -398,4 +403,101 @@ form button:hover {
 }
 #contact {
     grid-column: 1 / -1;
+}
+/* ==========================
+   Day 11 Animations
+========================== */
+
+/* Section Fade Animation */
+
+section {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading Animation */
+
+h1,
+h2 {
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skill Card Hover */
+
+.skill-card {
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.08);
+    background: #388E3C;
+}
+
+/* Experience Card Hover */
+
+.experience-card {
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Resume Button Hover */
+
+#resume .btn {
+    transition: all 0.3s ease;
+}
+
+#resume .btn:hover {
+    transform: scale(1.05);
+}
+
+/* Social Links Hover */
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #388E3C;
+    transform: scale(1.1);
+}
+
+/* Form Fields */
+
+form input,
+form textarea {
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76,175,80,0.5);
 }
