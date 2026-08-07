@@ -410,10 +410,10 @@ form button:hover {
 
 /* Section Fade Animation */
 
-section {
-    animation: fadeIn 1s ease;
+h1,
+h2 {
+    animation: slideDown 1s ease;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -500,4 +500,65 @@ form textarea:focus {
     border: 2px solid #4CAF50;
     outline: none;
     box-shadow: 0 0 8px rgba(76,175,80,0.5);
+}
+section {
+    animation: fadeIn 3s ease;
+}
+
+h1,
+h2 {
+    animation: slideDown 3s ease;
+}
+/* ==========================
+   Certifications Section
+========================== */
+
+#certifications {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#certifications h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#certifications .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#certifications .skill-card {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#certifications .skill-card:hover {
+    transform: scale(1.05);
+    background: #388E3C;
+}
+#certifications .skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#certifications .skill{
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#certifications .skill:hover{
+    background: #388E3C;
+    transform: scale(1.05);
 }
