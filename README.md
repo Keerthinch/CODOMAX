@@ -42,13 +42,7 @@ CODOMAX/
 ```
 
 ## 🌐 Live Website
-
-GitHub Pages:
-Add your live website link here.
-
-## 🎥 Demo Video
-
-Add your demo video link here.
+https://keerthinch.github.io/CODOMAX/
 
 ## 👩‍💻 About Me
 
